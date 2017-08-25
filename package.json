@@ -1,0 +1,28 @@
+{
+  "name": "css_illustrations",
+  "version": "1.0.0",
+  "description": "practicing drawing with css only",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elorenn/css_illustrations.git"
+  },
+  "keywords": [
+    "css",
+    "illustration",
+    "cssonly",
+    "drawing",
+    "webdesign",
+    "graphics",
+    "singlediv"
+  ],
+  "author": "Lorena Sarasua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elorenn/css_illustrations/issues"
+  },
+  "homepage": "https://github.com/elorenn/css_illustrations#readme"
+}
