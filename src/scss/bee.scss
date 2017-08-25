@@ -18,40 +18,32 @@ body {
 }
 
 .bee {
-  margin: 90px 100px 190px 40px;
-  .bee-head  {
-    width: 20px;
-    height: 20px;
-    background-color: $greyD;
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 61px 0px 0 0px $greyD,
-                67px 0px 0 17px $white,
-                -7px 0px 0 17px $white,
-                30px 10px 0 45px $yellowL,
-                -7px -70px 0 0px $greyD,
-                70px -70px 0 0px $greyD;
-    &:after {
-      content: '';
-      position: absolute;
-      background: $yellowL;
-      height: 130px;
-      width: 130px;
-      border-radius: 50%;
-      top: 50px;
-      left: -25px;
-      background-image: linear-gradient(to bottom, transparent 50%, $greyD 50%);
-      background-size: 130px 65px;
-    }
+  margin: 136px 10px 38px 10px;
+  background: $yellowL; /*body*/
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  top: 50px;
+  left: -25px;
+  background-image: linear-gradient(to bottom, transparent 50%, $greyD 50%); /*stripes on body*/
+  background-size: 130px 65px;
+  position: relative;
+  box-shadow: 30px -105px 0 -55px $greyD, /*pupils*/
+              -30px -105px 0 -55px $greyD, /*pupils*/
+              35px -105px 0 -38px $white, /*eyeballs*/
+              -35px -105px 0 -38px $white, /*eyeballs*/ 
+              0px -95px 0 -10px $yellowL, /*head*/
+              -33px -180px 0 -54px $greyD, /*antenae nubs*/ 
+              33px -180px 0 -54px $greyD; /*antenae nubs*/
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -28px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid $greyD; /*stinger*/
   }
-}
-
-/* Make the body the original div, rather than the eyeball*/
-
-.sting {
-  width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid $greyD;
 }  

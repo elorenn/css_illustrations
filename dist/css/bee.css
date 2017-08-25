@@ -14,33 +14,31 @@ body {
   height: 100vh; }
 
 .bee {
-  margin: 90px 100px 190px 40px; }
-  .bee .bee-head {
-    width: 20px;
-    height: 20px;
-    background-color: #363636;
-    border-radius: 50%;
-    position: relative;
-    -webkit-box-shadow: 67px 0px 0 0px #363636, 67px 0px 0 17px #FFF, -7px 0px 0 17px #FFF, 30px 10px 0 45px #FFD764, -7px -70px 0 0px #363636, 70px -70px 0 0px #363636;
-            box-shadow: 67px 0px 0 0px #363636, 67px 0px 0 17px #FFF, -7px 0px 0 17px #FFF, 30px 10px 0 45px #FFD764, -7px -70px 0 0px #363636, 70px -70px 0 0px #363636; }
-    .bee .bee-head:after {
-      content: '';
-      position: absolute;
-      background: #FFD764;
-      height: 130px;
-      width: 130px;
-      border-radius: 50%;
-      top: 50px;
-      left: -25px;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #363636));
-      background-image: linear-gradient(to bottom, transparent 50%, #363636 50%);
-      background-size: 130px 65px; }
-
-/* Make the body the original div, rather than the eyeball*/
-.sting {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid #363636; }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zY3NzL2JlZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVNBO0VBQ0UscURBQXNEO0VBQ3RELG9CQUFtQjtFQUNuQixxQkFBYTtFQUFiLHFCQUFhO0VBQWIsY0FBYTtFQUNiLGdCQUFlO0VBQ2YseUJBQXVCO01BQXZCLHNCQUF1QjtVQUF2Qix3QkFBdUI7RUFDdkIsMEJBQW1CO01BQW5CLHVCQUFtQjtVQUFuQixvQkFBbUI7RUFDbkIsY0FBYSxFQUNkOztBQUVEO0VBQ0UsOEJBQTZCLEVBMEI5QjtFQTNCRDtJQUdJLFlBQVc7SUFDWCxhQUFZO0lBQ1osMEJBbkJXO0lBb0JYLG1CQUFrQjtJQUNsQixtQkFBa0I7SUFDbEIscUtBdEJXO1lBc0JYLDZKQXRCVyxFQXdDWjtJQTFCSDtNQWVNLFlBQVc7TUFDWCxtQkFBa0I7TUFDbEIsb0JBbENXO01BbUNYLGNBQWE7TUFDYixhQUFZO01BQ1osbUJBQWtCO01BQ2xCLFVBQVM7TUFDVCxZQUFXO01BQ1gsMEhBQXlFO01BQXpFLDJFQUF5RTtNQUN6RSw0QkFBMkIsRUFDNUI7O0FBSUwsNERBQTREO0FBRTVEO0VBQ0UsU0FBUTtFQUNULFVBQVM7RUFDVCxvQ0FBbUM7RUFDbkMscUNBQW9DO0VBQ3BDLGdDQWxEYyxFQW1EZCIsImZpbGUiOiJiZWUuY3NzIn0= */
+  margin: 136px 10px 38px 10px;
+  background: #FFD764;
+  /*body*/
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  top: 50px;
+  left: -25px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #363636));
+  background-image: linear-gradient(to bottom, transparent 50%, #363636 50%);
+  /*stripes on body*/
+  background-size: 130px 65px;
+  position: relative;
+  -webkit-box-shadow: 30px -105px 0 -55px #363636, -30px -105px 0 -55px #363636, 35px -105px 0 -38px #FFF, -35px -105px 0 -38px #FFF, 0px -95px 0 -10px #FFD764, -33px -180px 0 -54px #363636, 33px -180px 0 -54px #363636;
+          box-shadow: 30px -105px 0 -55px #363636, -30px -105px 0 -55px #363636, 35px -105px 0 -38px #FFF, -35px -105px 0 -38px #FFF, 0px -95px 0 -10px #FFD764, -33px -180px 0 -54px #363636, 33px -180px 0 -54px #363636;
+  /*antenae nubs*/ }
+  .bee:after {
+    position: absolute;
+    content: '';
+    bottom: -28px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #363636;
+    /*stinger*/ }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zY3NzL2JlZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVNBO0VBQ0UscURBQXNEO0VBQ3RELG9CQUFtQjtFQUNuQixxQkFBYTtFQUFiLHFCQUFhO0VBQWIsY0FBYTtFQUNiLGdCQUFlO0VBQ2YseUJBQXVCO01BQXZCLHNCQUF1QjtVQUF2Qix3QkFBdUI7RUFDdkIsMEJBQW1CO01BQW5CLHVCQUFtQjtVQUFuQixvQkFBbUI7RUFDbkIsY0FBYSxFQUNkOztBQUVEO0VBQ0UsNkJBQTRCO0VBQzVCLG9CQW5CZTtFQW1CTyxRQUFRO0VBQzlCLGNBQWE7RUFDYixhQUFZO0VBQ1osbUJBQWtCO0VBQ2xCLFVBQVM7RUFDVCxZQUFXO0VBQ1gsMEhBQXlFO0VBQXpFLDJFQUF5RTtFQUFFLG1CQUFtQjtFQUM5Riw0QkFBMkI7RUFDM0IsbUJBQWtCO0VBQ2xCLHlOQXpCYTtVQXlCYixpTkF6QmE7RUErQjJCLGdCQUFnQixFQVl6RDtFQTdCRDtJQW1CSSxtQkFBa0I7SUFDbEIsWUFBVztJQUNYLGNBQWE7SUFDYixXQUFVO0lBQ1YsU0FBUTtJQUNSLFVBQVM7SUFDVCxvQ0FBbUM7SUFDbkMscUNBQW9DO0lBQ3BDLCtCQXpDVztJQXlDb0IsV0FBVyxFQUMzQyIsImZpbGUiOiJiZWUuY3NzIn0= */
