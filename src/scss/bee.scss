@@ -3,13 +3,14 @@ $orangeD: #FF7300;
 $yellowL: #FFD764;
 $yellowD: #FFA70B;
 $greyL: #F0F0F0;
-$greyD: #363636;
-$brown: #D56A01;
-$white: #FFF;
+$black: #363636;
+$greyD: #F0F0F0;
+$whiteD: #F8F8FF;
+$whiteL: #FFF;
 
 body {
   background: linear-gradient(45deg, $orangeD, $yellowD); 
-  background: #7ec0ee;
+  // background: #7ec0ee;
   display: flex;
   cursor: default;
   justify-content: center;
@@ -18,23 +19,24 @@ body {
 }
 
 .bee {
-  margin: 136px 10px 38px 10px;
+  margin: 136px 130px 38px 130px;
+  min-width: 130px;
   background: $yellowL; /*body*/
   height: 130px;
   width: 130px;
   border-radius: 50%;
   top: 50px;
   left: -25px;
-  background-image: linear-gradient(to bottom, transparent 50%, $greyD 50%); /*stripes on body*/
+  background-image: linear-gradient(to bottom, transparent 50%, $black 50%); /*stripes on body*/
   background-size: 130px 65px;
   position: relative;
-  box-shadow: 30px -105px 0 -55px $greyD, /*pupils*/
-              -30px -105px 0 -55px $greyD, /*pupils*/
-              35px -105px 0 -38px $white, /*eyeballs*/
-              -35px -105px 0 -38px $white, /*eyeballs*/ 
+  box-shadow: 30px -105px 0 -55px $black, /*pupils*/
+              -30px -105px 0 -55px $black, /*pupils*/
+              35px -105px 0 -38px $whiteL, /*eyeballs*/
+              -35px -105px 0 -38px $whiteL, /*eyeballs*/ 
               0px -95px 0 -10px $yellowL, /*head*/
-              -33px -180px 0 -54px $greyD, /*antenae nubs*/ 
-              33px -180px 0 -54px $greyD; /*antenae nubs*/
+              -35px -184px 0 -54px $black, /*antenae nubs*/ 
+              35px -184px 0 -54px $black; /*antenae nubs*/
   &:after {
     position: absolute;
     content: '';
@@ -44,6 +46,95 @@ body {
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 30px solid $greyD; /*stinger*/
+    border-top: 30px solid $black; /*stinger*/
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 55px;
+    top: -5px;
+    border-radius: 50%;
+    border-style: hidden;
+    border-top: 5px solid $black;
   }
 }  
+
+
+.bee-left {
+  content: '';
+  position: absolute;
+  background-color: $whiteD; /*large wing left*/
+  height: 100px;
+  width: 150px;
+  bottom: 110px;
+  left: -120px;
+  border-radius: 30px 130px 0 130px;
+  transform: skewY(20deg);
+  z-index: -1;
+  box-shadow: inset 30px 105px 0 -70px $whiteL;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    top: 70px;
+    left: 48px;
+    background-color: $greyL; /*little wing left*/
+    border-radius: 50% / 50% 0 100% 50%;
+    box-shadow: inset 10px 1px 0px 0px $whiteL, 
+                inset 30px 7px 0px 0px #f6f6f6;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;   
+    border-radius: 50%;
+    left: 116px;
+    bottom: 118px;
+    border: 8px solid $black;  /*left antenae stem*/
+    box-sizing: border-box;
+    border-style: hidden solid hidden hidden;
+  }
+ }
+
+.bee-right {
+  content: '';
+  position: absolute;
+  background-color: $whiteD; /*large wing right*/
+  height: 100px;
+  width: 150px;
+  bottom: 110px;
+  right: -120px;
+  border-radius: 30px 130px 0 130px;
+  border-radius: 130px 30px 130px 0px;
+  transform: skewY(-20deg);
+  z-index: -1;
+  box-shadow: inset 30px 105px 0 -70px $whiteL;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    top: 70px;
+    right: 48px;
+    background-color: $greyL; /*little wing right*/
+    border-radius: 50% / 0 50% 50% 100%;
+    box-shadow: inset -10px 1px 0px 0px $whiteL, 
+                inset -30px 7px 0px 0px #f6f6f6;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;   
+    border-radius: 50%;
+    right: 116px;
+    bottom: 118px;
+    border: 8px solid $black; /*right antenae stem*/
+    box-sizing: border-box;
+    border-style: hidden hidden hidden solid;
+  }
+ }
